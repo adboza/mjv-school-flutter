@@ -2,15 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:mjvproject/components/icon_button_component.dart';
 import 'package:mjvproject/components/spacer_component.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class PerfilTab extends StatelessWidget {
+  const PerfilTab({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'School',
-        home: Scaffold(
-          body: Container(
+    return Container(
             padding: const EdgeInsets.all(20),
             child:
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -73,40 +70,6 @@ class MyApp extends StatelessWidget {
                 Switch(value: true, onChanged: (val) {}),
               ]),
             ]),
-          ),
-        ));
-
-    /* return MaterialApp(
-      title: 'School',
-      home: Scaffold(
-        body: Container(
-        padding: const EdgeInsets.all(20),
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const CircleAvatar(child: Text('AB'),),
-                const Text('Texto1'),
-                const Text('Texto2'),
-                const Text('Texto3'),
-                const Divider(),
-                const Row(
-                  children: [
-                    Icon(Icons.add, color: Colors.green),
-                    Spacer(),
-                    Icon(Icons.access_alarm, color: Colors.yellow),
-                  ],
-                ),
-                Switch(value: true, onChanged: (val) {}),
-                const Card(
-                  child: Padding(
-                    padding: EdgeInsets.all(16),
-                    child: Text('Adriana'),
-                  ),
-                ),
-              ]),
-        ),
-      ),
-    ); */
+    );
   }
 }
